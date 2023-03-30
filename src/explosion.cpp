@@ -46,7 +46,7 @@ public:
     renderer.texture("image", "explosion");
 
     // 30 fps => each frame 1/30 long, e.g. when time = 1s, we play frame 30
-    frame = 0;
+    frame = (int)(elapsedTime() * 30) % (numRows * numCols);
     renderer.setUniform("Frame", frame);
     renderer.setUniform("Rows", numRows);
     renderer.setUniform("Cols", numCols);
@@ -58,6 +58,10 @@ public:
     renderer.sprite(vec3(0.0), vec4(1.0f), 1.0);
 
     renderer.endShader();
+
+    // float u = (frame % numCols) / float(numCols);
+    // float v = (frame / numRows) / float(numRows);
+    // std::cout << "Frame: " << frame << " u: " << u << " v: " << v << std::endl;
   }
 
 protected:
