@@ -2,7 +2,7 @@
 
 Implements particle demos
 
-TODO: Add a representative image for your project here
+![](readme_assets/explosion.png)
 
 ## How to build
 
@@ -47,11 +47,7 @@ particles/build $ ../bin/sparkle-trail
 particles/build $ ../bin/explosion
 ```
 
-## Demo of basic features
-
-TODO: Document the main demos your viewer (shaders + models)
-
 ## Unique features 
 
-TODO: Show the unique features you made
+<video src="readme_assets/explosion.mov"></video>
 
