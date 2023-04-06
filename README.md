@@ -2,7 +2,7 @@
 
 Implements particle demos
 
-![](readme_assets/explosion.png)
+![](readme_assets/explosion.gif)
 
 ## How to build
 
@@ -49,5 +49,7 @@ particles/build $ ../bin/explosion
 
 ## Unique features 
 
-<video src="readme_assets/explosion.mov"></video>
+Uses three keyframed particle systems (for fireball, shockwave, and debris). Particles are rendered as spheres using a modified unlit shader.
+
+![](readme_assets/explosion.gif)
 
