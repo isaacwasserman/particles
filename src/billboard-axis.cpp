@@ -113,6 +113,7 @@ public:
     renderer.texture("Image", "tree");
     renderer.push();
     renderer.rotate(atan2(eyePos.x, eyePos.z), vec3(0, 1, 0));
+   //  renderer.rotate(-1.0f * atan2(eyePos.y, sqrt(eyePos.x * eyePos.x + eyePos.z * eyePos.z)), vec3(1, 0, 0));
     renderer.translate(vec3(-0.5, -0.5, 0));
     renderer.quad(); // vertices span from (0,0,0) to (1,1,0)
     renderer.pop();
